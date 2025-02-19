@@ -101,7 +101,7 @@ python /home/prithwijit/Cracks/unet/predictions_thebe.py \
     --test_image_folder "/mnt/HD_18T_pt1/prithwijit/Faultseg/Thebe/test/seismic" \
     --test_label_folder "/mnt/HD_18T_pt1/prithwijit/Faultseg/Thebe/test/labels" \
     --prediction_logits_dir "/mnt/HD_18T_pt1/prithwijit/models_predictions/unet/thebe/pretrain_synth/logits" \
-    --save_dir "/mnt/HD_18T_pt1/prithwijit/models_predictions/unet/thebe/pretrain_synth/logits/examples"
+    --save_dir "/mnt/HD_18T_pt1/prithwijit/models_predictions/unet/thebe/pretrain_synth/examples"
 
 echo "Starting prediction on thebe on finetune expert"
 python /home/prithwijit/Cracks/unet/predictions_thebe.py \
