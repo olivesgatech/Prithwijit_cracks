@@ -1,0 +1,37 @@
+Evaluation for unet
+test set: cracks
+finetune: cracks experts
+Best Threshold: 0.36
+Average BCD_2D: 14.52941463913203
+Evaluation for unet
+test set: cracks
+finetune: cracks experts
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.5506456697599692
+Best Threshold: 0.56
+Average Dice Score: 0.363949826357658
+Evaluation for unet
+test set: cracks
+finetune: cracks experts
+Best Threshold: 0.21
+Average hausdorff_distance_2D: 11.200245961323464
+Evaluation for unet
+test set: cracks
+finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D: 30.93021276149402
+Evaluation for unet
+test set: cracks
+finetune: cracks prac
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.16501879150899484
+Best Threshold: 0.01
+Average Dice Score: 0.17043492747063682
+Evaluation for unet
+test set: cracks
+finetune: cracks prac
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 21.764821304653303
+Evaluation for unet
+test set: cracks
+finetune: cracks novice

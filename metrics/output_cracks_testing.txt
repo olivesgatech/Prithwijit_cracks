@@ -1,0 +1,37 @@
+Evaluation for deeplab
+test set: cracks
+finetune: cracks experts
+Best Threshold: 0.36
+Average BCD_2D: 14.347882101937339
+Evaluation for deeplab
+test set: cracks
+finetune: cracks experts
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.829514130799757
+Best Threshold: 0.56
+Average Dice Score: 0.30960796784689426
+Evaluation for deeplab
+test set: cracks
+finetune: cracks experts
+Best Threshold: 0.11
+Average hausdorff_distance_2D: 10.250493218287003
+Evaluation for deeplab
+test set: cracks
+finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D: 24.477394612855342
+Evaluation for deeplab
+test set: cracks
+finetune: cracks prac
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.15340612160719821
+Best Threshold: 0.01
+Average Dice Score: 0.17452154401166162
+Evaluation for deeplab
+test set: cracks
+finetune: cracks prac
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 18.00224968048099
+Evaluation for deeplab
+test set: cracks
+finetune: cracks novice

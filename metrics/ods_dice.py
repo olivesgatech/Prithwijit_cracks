@@ -38,13 +38,15 @@ def main(args):
         if base in pred_dict:
             file_pairs.append((gt_file, pred_dict[base]))
         else:
-            print(f"Warning: No corresponding prediction file found for {gt_file}")
+            # print(f"Warning: No corresponding prediction file found for {gt_file}")
+            x =1 
     
     print("Total file pairs for threshold selection:", len(file_pairs))
     
     # Loop over thresholds (from 0.01 to 0.99) and compute average Dice score
+    thresholds = np.arange(1, 100, 5)
     dice_scores = []
-    for th in tqdm(range(1, 100), desc="Processing thresholds"):
+    for th in tqdm(thresholds, desc="Processing thresholds"):
         dice_total = 0.0
         for gt_file, pred_file in tqdm(file_pairs, desc=f"Threshold {th/100:.2f}", leave=False, total=len(file_pairs)):
             # Load the numpy arrays
@@ -68,7 +70,7 @@ def main(args):
     
     dice_scores = np.asarray(dice_scores)
     # For Dice score, best threshold is the one with the maximum score.
-    best_threshold = list(range(1, 100))[np.argmax(dice_scores)] / 100
+    best_threshold = thresholds[np.argmax(dice_scores)] / 100
     max_dice = np.max(dice_scores)
     
     print("Max Average Dice Score:", max_dice)
@@ -90,9 +92,10 @@ def main(args):
         if base in eval_gt_dict:
             eval_file_pairs.append((eval_gt_dict[base], pred_file))
         else:
-            print(f"Warning: No ground truth file for {pred_file}")
+            # print(f"Warning: No ground truth file for {pred_file}")
+            x =1
     
-    print("Total evaluation file pairs:", len(eval_file_pairs))
+    # print("Total evaluation file pairs:", len(eval_file_pairs))
     
     total_dice = 0.0
     results = {}  # To store per-image Dice scores
@@ -118,13 +121,13 @@ def main(args):
     else:
         avg_dice = None
     
-    print("Evaluation Results:")
-    print(f"Number of evaluated images: {len(eval_file_pairs)}")
+    # print("Evaluation Results:")
+    # print(f"Number of evaluated images: {len(eval_file_pairs)}")
     print(f"Average Dice Score: {avg_dice}")
     
-    # Optionally, print per-image Dice scores
-    for fname, score in results.items():
-        print(f"{fname}: Dice Score = {score}")
+    # # Optionally, print per-image Dice scores
+    # for fname, score in results.items():
+    #     print(f"{fname}: Dice Score = {score}")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(

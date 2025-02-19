@@ -46,13 +46,15 @@ def main(args):
         if base in pred_dict:
             file_pairs.append((gt_file, pred_dict[base]))
         else:
-            print(f"Warning: No corresponding prediction file found for {gt_file}")
+            # print(f"Warning: No corresponding prediction file found for {gt_file}")
+            x = 1
 
-    print("Total file pairs for threshold selection:", len(file_pairs))
+    # print("Total file pairs for threshold selection:", len(file_pairs))
 
     # Loop over thresholds (from 0.01 to 0.99) and compute the metric
+    thresholds = np.arange(1, 100, 5)
     metrics = []
-    for th in tqdm(range(1, 100), desc="Processing thresholds"):
+    for th in tqdm(thresholds, desc="Processing thresholds"):
         metric_total = 0.0
         # Iterate over each pair of ground truth and prediction files
         for gt_file, pred_file in tqdm(file_pairs, desc=f"Threshold {th/100:.2f}", leave=False, total=len(file_pairs)):
@@ -77,10 +79,10 @@ def main(args):
 
     # Convert the metrics list to a numpy array and determine the best threshold
     metrics = np.asarray(metrics)
-    best_threshold = list(range(1, 100))[np.argmin(metrics)] / 100
+    best_threshold = thresholds[np.argmin(metrics)] / 100
     min_metric = np.min(metrics)
 
-    print("Min Metric:", min_metric)
+    # print("Min Metric:", min_metric)
     print(f"Best Threshold: {best_threshold}")
 
     # Folder paths for evaluation predictions and ground truth files
@@ -99,9 +101,10 @@ def main(args):
         if base in eval_gt_dict:
             eval_file_pairs.append((eval_gt_dict[base], pred_file))
         else:
-            print(f"Warning: No ground truth file for {pred_file}")
+            # print(f"Warning: No ground truth file for {pred_file}")
+            x =1
 
-    print("Total evaluation file pairs:", len(eval_file_pairs))
+    # print("Total evaluation file pairs:", len(eval_file_pairs))
 
     # Process each evaluation image using the best threshold
     total_metric = 0.0
@@ -133,13 +136,13 @@ def main(args):
     else:
         avg_metric = None
 
-    print("Evaluation Results:")
-    print(f"Number of evaluated images: {len(eval_file_pairs)}")
+    # print("Evaluation Results:")
+    # print(f"Number of evaluated images: {len(eval_file_pairs)}")
     print(f"Average BCD_2D: {avg_metric}")
 
     # Optionally, print per-image results
-    for fname, m in results.items():
-        print(f"{fname}: BCD_2D = {m}")
+    # for fname, m in results.items():
+    #     print(f"{fname}: BCD_2D = {m}")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(

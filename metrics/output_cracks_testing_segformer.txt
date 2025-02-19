@@ -1,0 +1,37 @@
+Evaluation for segformer
+test set: cracks
+finetune: cracks experts
+Best Threshold: 0.46
+Average BCD_2D: 15.754645324589841
+Evaluation for segformer
+test set: cracks
+finetune: cracks experts
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.4402403468676098
+Best Threshold: 0.56
+Average Dice Score: 0.31568553431727714
+Evaluation for segformer
+test set: cracks
+finetune: cracks experts
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 10.919080795024115
+Evaluation for segformer
+test set: cracks
+finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D: 39.30885561767381
+Evaluation for segformer
+test set: cracks
+finetune: cracks prac
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.1747020619716107
+Best Threshold: 0.01
+Average Dice Score: 0.18057201251447133
+Evaluation for segformer
+test set: cracks
+finetune: cracks prac
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 32.54318562103923
+Evaluation for segformer
+test set: cracks
+finetune: cracks novice
