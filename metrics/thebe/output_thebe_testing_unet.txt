@@ -1,0 +1,75 @@
+Evaluation for unet
+test set: thebe
+finetune: cracks experts
+Best Threshold: 0.01
+Average BCD_2D: 213.69485564901868
+Evaluation for unet
+test set: thebe
+finetune: cracks experts
+Best Threshold: 0.01
+Average Dice Score: 0.019272205238636854
+Evaluation for unet
+test set: thebe
+finetune: cracks experts
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 147.2127381657261
+Evaluation for unet
+test set: thebe
+finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D: 366.4005225176504
+Evaluation for unet
+test set: thebe
+finetune: cracks prac
+Best Threshold: 0.01
+Average Dice Score: 0.01262408163179781
+Evaluation for unet
+test set: thebe
+finetune: cracks prac
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 260.242096169011
+Evaluation for unet
+test set: thebe
+finetune: cracks novice
+Best Threshold: 0.01
+Average BCD_2D: 185.58220828403464
+Evaluation for unet
+test set: thebe
+finetune: cracks novice
+Best Threshold: 0.01
+Average Dice Score: 0.02989893436502168
+Evaluation for unet
+test set: thebe
+finetune: cracks novice
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 111.5441377785832
+Evaluation for unet
+test set: thebe
+finetune: thebe
+Best Threshold: 0.01
+Average BCD_2D: 78.6830601550959
+Evaluation for unet
+test set: thebe
+finetune: thebe
+Best Threshold: 0.01
+Average Dice Score: 0.15821557843252199
+Evaluation for unet
+test set: thebe
+finetune: thebe
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 51.649013505056
+Evaluation for unet
+test set: thebe
+pretrain_synth
+Best Threshold: 0.01
+Average BCD_2D: 199.2775596616494
+Evaluation for unet
+test set: thebe
+pretrain_synth
+Best Threshold: 0.01
+Average Dice Score: 0.02019477165476867
+Evaluation for unet
+test set: thebe
+pretrain_synth
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 140.2569575451697
