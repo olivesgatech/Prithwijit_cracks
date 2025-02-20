@@ -1,0 +1,15 @@
+Evaluation for unetpp
+test set: cracks
+finetune: cracks experts
+Best Threshold: 0.36
+Average BCD_2D: 14.668795192985632
+Evaluation for unetpp
+test set: cracks
+finetune: cracks experts
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.4719891084216011
+Best Threshold: 0.51
+Average Dice Score: 0.38024282521794206
+Evaluation for unetpp
+test set: cracks
+finetune: cracks experts

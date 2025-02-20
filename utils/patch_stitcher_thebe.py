@@ -9,9 +9,9 @@ from skimage.transform import resize
 
 
 
-thebe_path = '/home/jorge/GhassanGT Dropbox/Jorge Quesada/Jorge/InSync/BIG and DATA/thebe_data/test/patches_processed/labels/'
+thebe_path = '/mnt/HD_18T_pt1/prithwijit/Faultseg/Thebe/test/seismic/'
 
-out_path =  '/home/jorge/GhassanGT Dropbox/Jorge Quesada/Jorge/InSync/BIG and DATA/thebe_data/test/patches_processed/labels_restitched/'
+out_path =  '/mnt/HD_18T_pt1/prithwijit/Faultseg/Thebe/test/seismic_stitched/'
 
 
 if not os.path.exists(out_path):

@@ -35,3 +35,51 @@ Average hausdorff_distance_2D: 32.54318562103923
 Evaluation for segformer
 test set: cracks
 finetune: cracks novice
+Best Threshold: 0.01
+Average BCD_2D: 17.231978763834903
+Evaluation for segformer
+test set: cracks
+finetune: cracks novice
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.25574685494796673
+Best Threshold: 0.01
+Average Dice Score: 0.24617153650877593
+Evaluation for segformer
+test set: cracks
+finetune: cracks novice
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 12.497626970493176
+Evaluation for segformer
+test set: cracks
+finetune: thebe
+Best Threshold: 0.01
+Average BCD_2D: 38.7923932325415
+Evaluation for segformer
+test set: cracks
+finetune: thebe
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.09367825573044708
+Best Threshold: 0.01
+Average Dice Score: 0.10321405761520835
+Evaluation for segformer
+test set: cracks
+finetune: thebe
+Best Threshold: 0.01
+Average hausdorff_distance_2D: 27.625549193930574
+Evaluation for segformer
+test set: cracks
+pretrain_synth
+Best Threshold: 0.51
+Average BCD_2D: 29.638313334044977
+Evaluation for segformer
+test set: cracks
+pretrain_synth
+Total file pairs for threshold selection: 340
+Max Average Dice Score: 0.09703687008250868
+Best Threshold: 0.51
+Average Dice Score: 0.10661113791561774
+Evaluation for segformer
+test set: cracks
+pretrain_synth
+Best Threshold: 0.76
+Average hausdorff_distance_2D: 20.973049512982616
