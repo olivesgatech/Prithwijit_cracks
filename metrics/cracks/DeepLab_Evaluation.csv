@@ -1,0 +1,16 @@
+Model,Test Set,Finetune,Best Threshold,Total File Pairs for Threshold Selection,Max Average Dice Score,Average BCD_2D,Average Dice Score,Average Hausdorff Distance 2D
+deeplab,cracks,cracks experts,0.36,,,14.347882101937339,,
+deeplab,cracks,cracks experts,0.56,340.0,0.829514130799757,,0.30960796784689426,
+deeplab,cracks,cracks experts,0.11,,,,,10.250493218287003
+deeplab,cracks,cracks prac,0.01,,,24.477394612855342,,
+deeplab,cracks,cracks prac,0.01,340.0,0.15340612160719821,,0.17452154401166162,
+deeplab,cracks,cracks prac,0.01,,,,,18.00224968048099
+deeplab,cracks,cracks novice,0.01,,,14.703387319231528,,
+deeplab,cracks,cracks novice,0.01,340.0,0.2558976808643616,,0.2546335120940401,
+deeplab,cracks,cracks novice,0.01,,,,,9.642535115643932
+deeplab,cracks,thebe,0.01,,,53.54043109060438,,
+deeplab,cracks,thebe,0.01,340.0,0.035011011410101114,,0.02575910141308987,
+deeplab,cracks,thebe,0.01,,,,,31.45285147039903
+deeplab,cracks,pretrain_synth,0.01,,,35.95004710648252,,
+deeplab,cracks,pretrain_synth,0.51,340.0,0.10610560358360148,,0.10694564898296803,
+deeplab,cracks,pretrain_synth,0.56,,,,,29.085687648743512

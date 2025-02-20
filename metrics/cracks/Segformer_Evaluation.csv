@@ -1,0 +1,16 @@
+Model,Test Set,Finetune,Best Threshold,Total File Pairs for Threshold Selection,Max Average Dice Score,Average BCD_2D,Average Dice Score,Average Hausdorff Distance 2D
+segformer,cracks,cracks experts,0.46,,,15.754645324589841,,
+segformer,cracks,cracks experts,0.56,340.0,0.4402403468676098,,0.31568553431727714,
+segformer,cracks,cracks experts,0.01,,,,,10.919080795024115
+segformer,cracks,cracks prac,0.01,,,39.30885561767381,,
+segformer,cracks,cracks prac,0.01,340.0,0.1747020619716107,,0.18057201251447133,
+segformer,cracks,cracks prac,0.01,,,,,32.54318562103923
+segformer,cracks,cracks novice,0.01,,,17.231978763834903,,
+segformer,cracks,cracks novice,0.01,340.0,0.25574685494796673,,0.24617153650877593,
+segformer,cracks,cracks novice,0.01,,,,,12.497626970493176
+segformer,cracks,thebe,0.01,,,38.7923932325415,,
+segformer,cracks,thebe,0.01,340.0,0.09367825573044708,,0.10321405761520835,
+segformer,cracks,thebe,0.01,,,,,27.625549193930574
+segformer,cracks,pretrain_synth,0.51,,,29.638313334044977,,
+segformer,cracks,pretrain_synth,0.51,340.0,0.09703687008250868,,0.10661113791561774,
+segformer,cracks,pretrain_synth,0.76,,,,,20.973049512982616
