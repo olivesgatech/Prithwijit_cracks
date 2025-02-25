@@ -85,3 +85,21 @@ Average Hausdorff on Hausdorff Threshold: 25.692168796663243
 Evaluation for unet
 test set: cracks
 pretrain_synth
+Best Threshold for BCD: 0.51
+Average BCD_2D on BCD Threshold: 29.63134321995569
+Average DICE on BCD Threshold: 0.1564930360161476
+Average Hausdorff on BCD Threshold: 23.088893663128154
+Evaluation for unet
+test set: cracks
+pretrain_synth
+Best Threshold: 0.66
+Average BCD_2D on DICE Threshold: 30.17288214717284
+Average DICE on DICE Threshold: 0.157648712060228
+Average Hausdorff on DICE Threshold: 22.804026575695747
+Evaluation for unet
+test set: cracks
+pretrain_synth
+Best Threshold: 0.76
+Average BCD_2D on Hausdorff Threshold: 30.237537928422796
+Average DICE on Hausdorff Threshold: 0.158365229192023
+Average Hausdorff on Hausdorff Threshold: 21.87638228170943

@@ -1,78 +1,93 @@
 Evaluation for unetpp
 test set: cracks
 finetune: cracks experts
-Best Threshold: 0.36
-Average BCD_2D: 14.668795192985632
+Best Threshold for BCD: 0.36
+Average BCD_2D on BCD Threshold: 14.668795192985632
+Average DICE on BCD Threshold: 0.38131736254069337
+Average Hausdorff on BCD Threshold: 11.188561577368207
 Evaluation for unetpp
 test set: cracks
 finetune: cracks experts
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.4719891084216011
 Best Threshold: 0.51
-Average Dice Score: 0.38024282521794206
+Average BCD_2D on DICE Threshold: 14.906570489670623
+Average DICE on DICE Threshold: 0.38024282521794206
+Average Hausdorff on DICE Threshold: 11.455252738710616
 Evaluation for unetpp
 test set: cracks
 finetune: cracks experts
 Best Threshold: 0.36
-Average hausdorff_distance_2D: 11.188561577368207
+Average BCD_2D on Hausdorff Threshold: 14.668795192985632
+Average DICE on Hausdorff Threshold: 0.38131736254069337
+Average Hausdorff on Hausdorff Threshold: 11.188561577368207
 Evaluation for unetpp
 test set: cracks
 finetune: cracks prac
 Evaluation for unetpp
 test set: cracks
 finetune: cracks prac
-Total file pairs for threshold selection: 0
 Evaluation for unetpp
 test set: cracks
 finetune: cracks prac
 Evaluation for unetpp
 test set: cracks
 finetune: cracks novice
-Best Threshold: 0.01
-Average BCD_2D: 23.97712973832265
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 23.97712973832265
+Average DICE on BCD Threshold: 0.21128370731785612
+Average Hausdorff on BCD Threshold: 18.405388148655074
 Evaluation for unetpp
 test set: cracks
 finetune: cracks novice
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.2094974802617661
 Best Threshold: 0.06
-Average Dice Score: 0.21595335002431992
+Average BCD_2D on DICE Threshold: 22.99052677916427
+Average DICE on DICE Threshold: 0.21595335002431992
+Average Hausdorff on DICE Threshold: 17.183554718694705
 Evaluation for unetpp
 test set: cracks
 finetune: cracks novice
 Best Threshold: 0.01
-Average hausdorff_distance_2D: 18.405388148655074
+Average BCD_2D on Hausdorff Threshold: 23.97712973832265
+Average DICE on Hausdorff Threshold: 0.21128370731785612
+Average Hausdorff on Hausdorff Threshold: 18.405388148655074
+Evaluation for unetpp
+test set: cracks
+finetune: thebe
+Best Threshold for BCD: 0.16
+Average BCD_2D on BCD Threshold: 37.8947525840529
+Average DICE on BCD Threshold: 0.12490895195546807
+Average Hausdorff on BCD Threshold: 31.843152430425686
 Evaluation for unetpp
 test set: cracks
 finetune: thebe
 Best Threshold: 0.16
-Average BCD_2D: 37.8947525840529
-Evaluation for unetpp
-test set: cracks
-finetune: thebe
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.13371173093182087
-Best Threshold: 0.16
-Average Dice Score: 0.12490895195546807
+Average BCD_2D on DICE Threshold: 37.8947525840529
+Average DICE on DICE Threshold: 0.12490895195546807
+Average Hausdorff on DICE Threshold: 31.843152430425686
 Evaluation for unetpp
 test set: cracks
 finetune: thebe
 Best Threshold: 0.51
-Average hausdorff_distance_2D: 33.56561242603133
+Average BCD_2D on Hausdorff Threshold: 48.983887718540664
+Average DICE on Hausdorff Threshold: 0.09147049457087181
+Average Hausdorff on Hausdorff Threshold: 33.56561242603133
 Evaluation for unetpp
 test set: cracks
 pretrain_synth
-Best Threshold: 0.71
-Average BCD_2D: 29.778368150849378
+Best Threshold for BCD: 0.71
+Average BCD_2D on BCD Threshold: 29.778368150849378
+Average DICE on BCD Threshold: 0.15935625278398252
+Average Hausdorff on BCD Threshold: 22.7326921825257
 Evaluation for unetpp
 test set: cracks
 pretrain_synth
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.16694290050541347
 Best Threshold: 0.61
-Average Dice Score: 0.15827763284299304
+Average BCD_2D on DICE Threshold: 29.95866825571898
+Average DICE on DICE Threshold: 0.15827763284299304
+Average Hausdorff on DICE Threshold: 23.218555703466162
 Evaluation for unetpp
 test set: cracks
 pretrain_synth
 Best Threshold: 0.96
-Average hausdorff_distance_2D: 22.024539733212247
+Average BCD_2D on Hausdorff Threshold: 30.736338323511987
+Average DICE on Hausdorff Threshold: 0.15438874725635332
+Average Hausdorff on Hausdorff Threshold: 22.024539733212247
