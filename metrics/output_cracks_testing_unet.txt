@@ -1,0 +1,10 @@
+Evaluation for unet
+test set: cracks
+finetune: cracks experts
+Best Threshold for BCD: 0.36
+Average BCD_2D on BCD Threshold: 14.52941463913203
+Average DICE on BCD Threshold: 0.36578521836583955
+Average Hausdorff on BCD Threshold: 10.915794995825797
+Evaluation for unet
+test set: cracks
+finetune: cracks experts
