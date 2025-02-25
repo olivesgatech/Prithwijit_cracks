@@ -1,85 +1,101 @@
 Evaluation for deeplab
 test set: cracks
 finetune: cracks experts
-Best Threshold: 0.36
-Average BCD_2D: 14.347882101937339
+Best Threshold for BCD: 0.36
+Average BCD_2D on BCD Threshold: 14.347882101937339
+Average DICE on BCD Threshold: 0.3274316539437188
+Average Hausdorff on BCD Threshold: 10.665829997222989
 Evaluation for deeplab
 test set: cracks
 finetune: cracks experts
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.829514130799757
 Best Threshold: 0.56
-Average Dice Score: 0.30960796784689426
+Average BCD_2D on DICE Threshold: 15.450316034582448
+Average DICE on DICE Threshold: 0.30960796784689426
+Average Hausdorff on DICE Threshold: 12.026316708809624
 Evaluation for deeplab
 test set: cracks
 finetune: cracks experts
 Best Threshold: 0.11
-Average hausdorff_distance_2D: 10.250493218287003
+Average BCD_2D on Hausdorff Threshold: 13.927968001787528
+Average DICE on Hausdorff Threshold: 0.32329810919093993
+Average Hausdorff on Hausdorff Threshold: 10.250493218287003
+Evaluation for deeplab
+test set: cracks
+finetune: cracks prac
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 24.477394612855342
+Average DICE on BCD Threshold: 0.17452154401166162
+Average Hausdorff on BCD Threshold: 18.00224968048099
 Evaluation for deeplab
 test set: cracks
 finetune: cracks prac
 Best Threshold: 0.01
-Average BCD_2D: 24.477394612855342
-Evaluation for deeplab
-test set: cracks
-finetune: cracks prac
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.15340612160719821
-Best Threshold: 0.01
-Average Dice Score: 0.17452154401166162
+Average BCD_2D on DICE Threshold: 24.477394612855342
+Average DICE on DICE Threshold: 0.17452154401166162
+Average Hausdorff on DICE Threshold: 18.00224968048099
 Evaluation for deeplab
 test set: cracks
 finetune: cracks prac
 Best Threshold: 0.01
-Average hausdorff_distance_2D: 18.00224968048099
+Average BCD_2D on Hausdorff Threshold: 24.477394612855342
+Average DICE on Hausdorff Threshold: 0.17452154401166162
+Average Hausdorff on Hausdorff Threshold: 18.00224968048099
+Evaluation for deeplab
+test set: cracks
+finetune: cracks novice
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 14.703387319231528
+Average DICE on BCD Threshold: 0.2546335120940401
+Average Hausdorff on BCD Threshold: 9.642535115643932
 Evaluation for deeplab
 test set: cracks
 finetune: cracks novice
 Best Threshold: 0.01
-Average BCD_2D: 14.703387319231528
-Evaluation for deeplab
-test set: cracks
-finetune: cracks novice
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.2558976808643616
-Best Threshold: 0.01
-Average Dice Score: 0.2546335120940401
+Average BCD_2D on DICE Threshold: 14.703387319231528
+Average DICE on DICE Threshold: 0.2546335120940401
+Average Hausdorff on DICE Threshold: 9.642535115643932
 Evaluation for deeplab
 test set: cracks
 finetune: cracks novice
 Best Threshold: 0.01
-Average hausdorff_distance_2D: 9.642535115643932
+Average BCD_2D on Hausdorff Threshold: 14.703387319231528
+Average DICE on Hausdorff Threshold: 0.2546335120940401
+Average Hausdorff on Hausdorff Threshold: 9.642535115643932
+Evaluation for deeplab
+test set: cracks
+finetune: thebe
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 53.54043109060438
+Average DICE on BCD Threshold: 0.02575910141308987
+Average Hausdorff on BCD Threshold: 31.45285147039903
 Evaluation for deeplab
 test set: cracks
 finetune: thebe
 Best Threshold: 0.01
-Average BCD_2D: 53.54043109060438
-Evaluation for deeplab
-test set: cracks
-finetune: thebe
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.035011011410101114
-Best Threshold: 0.01
-Average Dice Score: 0.02575910141308987
+Average BCD_2D on DICE Threshold: 53.54043109060438
+Average DICE on DICE Threshold: 0.02575910141308987
+Average Hausdorff on DICE Threshold: 31.45285147039903
 Evaluation for deeplab
 test set: cracks
 finetune: thebe
 Best Threshold: 0.01
-Average hausdorff_distance_2D: 31.45285147039903
+Average BCD_2D on Hausdorff Threshold: 53.54043109060438
+Average DICE on Hausdorff Threshold: 0.02575910141308987
+Average Hausdorff on Hausdorff Threshold: 31.45285147039903
 Evaluation for deeplab
 test set: cracks
 pretrain_synth
-Best Threshold: 0.01
-Average BCD_2D: 35.95004710648252
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 35.95004710648252
+Average DICE on BCD Threshold: 0.10256301559342844
+Average Hausdorff on BCD Threshold: 31.29584445507205
 Evaluation for deeplab
 test set: cracks
 pretrain_synth
-Total file pairs for threshold selection: 340
-Max Average Dice Score: 0.10610560358360148
 Best Threshold: 0.51
-Average Dice Score: 0.10694564898296803
+Average BCD_2D on DICE Threshold: 39.72295305581519
+Average DICE on DICE Threshold: 0.10694564898296803
+Average Hausdorff on DICE Threshold: 29.019608165502998
 Evaluation for deeplab
 test set: cracks
 pretrain_synth
-Best Threshold: 0.56
-Average hausdorff_distance_2D: 29.085687648743512

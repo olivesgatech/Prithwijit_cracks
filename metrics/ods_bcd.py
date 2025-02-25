@@ -6,6 +6,39 @@ from skimage.morphology import skeletonize
 from scipy.ndimage import binary_dilation, generate_binary_structure
 from sklearn.neighbors import NearestNeighbors
 import argparse
+from skimage.metrics import hausdorff_distance
+
+def compute_dice_score(gt, pred):
+    """
+    Compute the Dice score between two binary masks.
+    If both masks are empty, returns 1.0.
+    """
+    intersection = np.sum(gt * pred)
+    gt_sum = np.sum(gt)
+    pred_sum = np.sum(pred)
+    
+    if gt_sum + pred_sum == 0:
+        return 1.0  # perfect match: both masks are empty
+    return 2 * intersection / (gt_sum + pred_sum)
+
+def calculate_modified_hausdorff_distance(true, pred):
+    """
+    Compute the modified Hausdorff distance between two binary masks.
+    
+    Parameters:
+        pred_np (numpy.ndarray): Binary prediction mask.
+        true_mask_np (numpy.ndarray): Binary ground truth mask.
+        
+    Returns:
+        float: The modified Hausdorff distance between the two masks.
+    """
+    # Ensure the arrays are boolean
+    pred_bool = pred.astype(bool)
+    true_mask_bool = true.astype(bool)
+    
+    # Calculate and return the modified Hausdorff distance
+    return hausdorff_distance(pred_bool, true_mask_bool, method='modified')
+
 
 def compute_bcd_2d(label, prediction):
     label_points = np.argwhere(label == 1)
@@ -83,7 +116,7 @@ def main(args):
     min_metric = np.min(metrics)
 
     # print("Min Metric:", min_metric)
-    print(f"Best Threshold: {best_threshold}")
+    print(f"Best Threshold for BCD: {best_threshold}")
 
     # Folder paths for evaluation predictions and ground truth files
     eval_pred_folder = args.eval_pred_folder
@@ -108,6 +141,8 @@ def main(args):
 
     # Process each evaluation image using the best threshold
     total_metric = 0.0
+    total_metric1 = 0.0
+    total_metric2 = 0.0
     results = {}  # To store per-image metrics
 
     for gt_file, pred_file in tqdm(eval_file_pairs, desc="Evaluating predictions"):
@@ -125,24 +160,36 @@ def main(args):
 
         # Compute the Bidirectional Chamfer Distance (BCD)
         metric = compute_bcd_2d(gt_image, dilated)
+        metric1 = compute_dice_score(gt_image, dilated)
+        metric2 = calculate_modified_hausdorff_distance(gt_image, dilated)
         total_metric += metric
+        total_metric1 += metric1
+        total_metric2 += metric2
 
         # Store the metric with the image's filename for later inspection
-        results[os.path.basename(pred_file)] = metric
+        # results[os.path.basename(pred_file)] = metric
 
     # Compute the average metric over all evaluated images
     if len(eval_file_pairs) > 0:
         avg_metric = total_metric / len(eval_file_pairs)
     else:
         avg_metric = None
+    if len(eval_file_pairs) > 0:
+        avg_metric1 = total_metric1 / len(eval_file_pairs)
+    else:
+        avg_metric1 = None
+    if len(eval_file_pairs) > 0:
+        avg_metric2 = total_metric2 / len(eval_file_pairs)
+    else:
+        avg_metric2 = None
 
-    # print("Evaluation Results:")
-    # print(f"Number of evaluated images: {len(eval_file_pairs)}")
-    print(f"Average BCD_2D: {avg_metric}")
 
-    # Optionally, print per-image results
-    # for fname, m in results.items():
-    #     print(f"{fname}: BCD_2D = {m}")
+    print(f"Average BCD_2D on BCD Threshold: {avg_metric}")
+    print(f"Average DICE on BCD Threshold: {avg_metric1}")
+    print(f"Average Hausdorff on BCD Threshold: {avg_metric2}")
+    
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(

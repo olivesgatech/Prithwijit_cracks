@@ -8,6 +8,20 @@ from sklearn.neighbors import NearestNeighbors
 import argparse
 from skimage.metrics import hausdorff_distance
 
+def compute_dice_score(gt, pred):
+    """
+    Compute the Dice score between two binary masks.
+    If both masks are empty, returns 1.0.
+    """
+    intersection = np.sum(gt * pred)
+    gt_sum = np.sum(gt)
+    pred_sum = np.sum(pred)
+    
+    if gt_sum + pred_sum == 0:
+        return 1.0  # perfect match: both masks are empty
+    return 2 * intersection / (gt_sum + pred_sum)
+
+
 def calculate_modified_hausdorff_distance(true, pred):
     """
     Compute the modified Hausdorff distance between two binary masks.
@@ -25,6 +39,26 @@ def calculate_modified_hausdorff_distance(true, pred):
     
     # Calculate and return the modified Hausdorff distance
     return hausdorff_distance(pred_bool, true_mask_bool, method='modified')
+
+def compute_bcd_2d(label, prediction):
+    label_points = np.argwhere(label == 1)
+    prediction_points = np.argwhere(prediction == 1)
+
+    if len(label_points) == 0 and len(prediction_points) == 0:
+        return 0
+    if len(label_points) == 0 or len(prediction_points) == 0:
+        return np.inf
+
+    nbrs_label = NearestNeighbors(n_neighbors=1, algorithm='auto').fit(prediction_points)
+    dists_label_to_pred, _ = nbrs_label.kneighbors(label_points)
+
+    nbrs_pred = NearestNeighbors(n_neighbors=1, algorithm='auto').fit(label_points)
+    dists_pred_to_label, _ = nbrs_pred.kneighbors(prediction_points)
+
+    min_dist_label_to_pred = np.mean(dists_label_to_pred)
+    min_dist_pred_to_label = np.mean(dists_pred_to_label)
+
+    return min_dist_label_to_pred + min_dist_pred_to_label
 
 def main(args):
     # Folder paths for ground truth and prediction numpy files (for threshold selection)
@@ -107,6 +141,8 @@ def main(args):
 
     # Process each evaluation image using the best threshold
     total_metric = 0.0
+    total_metric1 = 0.0
+    total_metric2 = 0.0    
     results = {}  # To store per-image metrics
 
     for gt_file, pred_file in tqdm(eval_file_pairs, desc="Evaluating predictions"):
@@ -124,10 +160,14 @@ def main(args):
 
         # Compute the hausdorff_distance
         metric = calculate_modified_hausdorff_distance(gt_image, dilated)
+        metric1 = compute_bcd_2d(gt_image, dilated)
+        metric2 = compute_dice_score(gt_image, dilated)
         total_metric += metric
+        total_metric1 += metric1
+        total_metric2 += metric2
 
         # Store the metric with the image's filename for later inspection
-        results[os.path.basename(pred_file)] = metric
+        # results[os.path.basename(pred_file)] = metric
 
     # Compute the average metric over all evaluated images
     if len(eval_file_pairs) > 0:
@@ -135,13 +175,23 @@ def main(args):
     else:
         avg_metric = None
 
-    # print("Evaluation Results:")
-    # print(f"Number of evaluated images: {len(eval_file_pairs)}")
-    print(f"Average hausdorff_distance_2D: {avg_metric}")
+    if len(eval_file_pairs) > 0:
+        avg_metric1 = total_metric1 / len(eval_file_pairs)
+    else:
+        avg_metric1 = None
+    if len(eval_file_pairs) > 0:
+        avg_metric2 = total_metric2 / len(eval_file_pairs)
+    else:
+        avg_metric2 = None
 
-    # Optionally, print per-image results
-    # for fname, m in results.items():
-    #     print(f"{fname}: hausdorff_distance = {m}")
+
+    # print(f"Average hausdorff_distance_2D: {avg_metric}")
+
+    print(f"Average BCD_2D on Hausdorff Threshold: {avg_metric1}")
+    print(f"Average DICE on Hausdorff Threshold: {avg_metric2}")
+    print(f"Average Hausdorff on Hausdorff Threshold: {avg_metric}")
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
