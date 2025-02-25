@@ -99,3 +99,7 @@ Average Hausdorff on DICE Threshold: 29.019608165502998
 Evaluation for deeplab
 test set: cracks
 pretrain_synth
+Best Threshold: 0.56
+Average BCD_2D on Hausdorff Threshold: 40.2707863381195
+Average DICE on Hausdorff Threshold: 0.10614430345477875
+Average Hausdorff on Hausdorff Threshold: 29.085687648743512
