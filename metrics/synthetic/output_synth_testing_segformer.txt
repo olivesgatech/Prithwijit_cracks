@@ -1,0 +1,45 @@
+Evaluation for segformer
+test set: synth
+finetune: cracks experts
+Evaluation for segformer
+test set: synth
+finetune: cracks experts
+Evaluation for segformer
+test set: synth
+finetune: cracks experts
+Evaluation for segformer
+test set: synth
+finetune: cracks prac
+Evaluation for segformer
+test set: synth
+finetune: cracks prac
+Evaluation for segformer
+test set: synth
+finetune: cracks prac
+Evaluation for segformer
+test set: synth
+finetune: cracks novice
+Evaluation for segformer
+test set: synth
+finetune: cracks novice
+Evaluation for segformer
+test set: synth
+finetune: cracks novice
+Evaluation for segformer
+test set: synth
+finetune: thebe
+Evaluation for segformer
+test set: synth
+finetune: thebe
+Evaluation for segformer
+test set: synth
+finetune: thebe
+Evaluation for segformer
+test set: synth
+pretrain_synth
+Evaluation for segformer
+test set: synth
+pretrain_synth
+Evaluation for segformer
+test set: synth
+pretrain_synth

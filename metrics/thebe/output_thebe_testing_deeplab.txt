@@ -1,0 +1,105 @@
+Evaluation for deeplab
+test set: thebe
+finetune: cracks experts
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: inf
+Average DICE on BCD Threshold: 0.0011582799753612034
+Average Hausdorff on BCD Threshold: 905.8432017461352
+Evaluation for deeplab
+test set: thebe
+finetune: cracks experts
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: inf
+Average DICE on DICE Threshold: 0.0011582799753612034
+Average Hausdorff on DICE Threshold: 905.8432017461352
+Evaluation for deeplab
+test set: thebe
+finetune: cracks experts
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: inf
+Average DICE on Hausdorff Threshold: 0.0011582799753612034
+Average Hausdorff on Hausdorff Threshold: 905.8432017461352
+Evaluation for deeplab
+test set: thebe
+finetune: cracks prac
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: inf
+Average DICE on BCD Threshold: 0.0
+Average Hausdorff on BCD Threshold: 3215.7794787020753
+Evaluation for deeplab
+test set: thebe
+finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: inf
+Average DICE on DICE Threshold: 0.0
+Average Hausdorff on DICE Threshold: 3215.7794787020753
+Evaluation for deeplab
+test set: thebe
+finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: inf
+Average DICE on Hausdorff Threshold: 0.0
+Average Hausdorff on Hausdorff Threshold: 3215.7794787020753
+Evaluation for deeplab
+test set: thebe
+finetune: cracks novice
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: inf
+Average DICE on BCD Threshold: 0.0
+Average Hausdorff on BCD Threshold: 3526.5627741470835
+Evaluation for deeplab
+test set: thebe
+finetune: cracks novice
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: inf
+Average DICE on DICE Threshold: 0.0
+Average Hausdorff on DICE Threshold: 3526.5627741470835
+Evaluation for deeplab
+test set: thebe
+finetune: cracks novice
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: inf
+Average DICE on Hausdorff Threshold: 0.0
+Average Hausdorff on Hausdorff Threshold: 3526.5627741470835
+Evaluation for deeplab
+test set: thebe
+finetune: thebe
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 59.89013471777073
+Average DICE on BCD Threshold: 0.15592137855615423
+Average Hausdorff on BCD Threshold: 33.42008230798466
+Evaluation for deeplab
+test set: thebe
+finetune: thebe
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: 59.89013471777073
+Average DICE on DICE Threshold: 0.15592137855615423
+Average Hausdorff on DICE Threshold: 33.42008230798466
+Evaluation for deeplab
+test set: thebe
+finetune: thebe
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: 59.89013471777073
+Average DICE on Hausdorff Threshold: 0.15592137855615423
+Average Hausdorff on Hausdorff Threshold: 33.42008230798466
+Evaluation for deeplab
+test set: thebe
+pretrain_synth
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 804.0199317859613
+Average DICE on BCD Threshold: 0.00015611997149770685
+Average Hausdorff on BCD Threshold: 436.52888353921384
+Evaluation for deeplab
+test set: thebe
+pretrain_synth
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: 804.0199317859613
+Average DICE on DICE Threshold: 0.00015611997149770685
+Average Hausdorff on DICE Threshold: 436.52888353921384
+Evaluation for deeplab
+test set: thebe
+pretrain_synth
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: 804.0199317859613
+Average DICE on Hausdorff Threshold: 0.00015611997149770685
+Average Hausdorff on Hausdorff Threshold: 436.52888353921384
