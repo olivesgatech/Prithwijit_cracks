@@ -8,14 +8,14 @@ Average Hausdorff on BCD Threshold: 96.11561491563505
 Evaluation for segformer
 test set: synth
 finetune: cracks experts
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 121.83093468850493
 Average DICE on DICE Threshold: 0.035410767301873265
 Average Hausdorff on DICE Threshold: 96.11561491563505
 Evaluation for segformer
 test set: synth
 finetune: cracks experts
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 121.83093468850493
 Average DICE on Hausdorff Threshold: 0.035410767301873265
 Average Hausdorff on Hausdorff Threshold: 96.11561491563505
@@ -29,14 +29,14 @@ Average Hausdorff on BCD Threshold: 517.1519082034711
 Evaluation for segformer
 test set: synth
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 520.110248699795
 Average DICE on DICE Threshold: 0.006124968732666342
 Average Hausdorff on DICE Threshold: 517.1519082034711
 Evaluation for segformer
 test set: synth
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 520.110248699795
 Average DICE on Hausdorff Threshold: 0.006124968732666342
 Average Hausdorff on Hausdorff Threshold: 517.1519082034711
@@ -50,14 +50,14 @@ Average Hausdorff on BCD Threshold: 152.15202218163432
 Evaluation for segformer
 test set: synth
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 167.26664880335207
 Average DICE on DICE Threshold: 0.024627284581597388
 Average Hausdorff on DICE Threshold: 152.15202218163432
 Evaluation for segformer
 test set: synth
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 167.26664880335207
 Average DICE on Hausdorff Threshold: 0.024627284581597388
 Average Hausdorff on Hausdorff Threshold: 152.15202218163432
@@ -71,14 +71,14 @@ Average Hausdorff on BCD Threshold: 43.31962894868401
 Evaluation for segformer
 test set: synth
 finetune: thebe
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 60.06337682277608
 Average DICE on DICE Threshold: 0.05859637713500506
 Average Hausdorff on DICE Threshold: 43.31962894868401
 Evaluation for segformer
 test set: synth
 finetune: thebe
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 60.06337682277608
 Average DICE on Hausdorff Threshold: 0.05859637713500506
 Average Hausdorff on Hausdorff Threshold: 43.31962894868401
@@ -92,14 +92,14 @@ Average Hausdorff on BCD Threshold: 7.268129898694089
 Evaluation for segformer
 test set: synth
 pretrain_synth
-Best Threshold: 0.96
+Best Threshold for DICE: 0.96
 Average BCD_2D on DICE Threshold: 9.929843705001717
 Average DICE on DICE Threshold: 0.35310044538030505
 Average Hausdorff on DICE Threshold: 7.268129898694089
 Evaluation for segformer
 test set: synth
 pretrain_synth
-Best Threshold: 0.96
+Best Threshold for Hausdorff: 0.96
 Average BCD_2D on Hausdorff Threshold: 9.929843705001717
 Average DICE on Hausdorff Threshold: 0.35310044538030505
 Average Hausdorff on Hausdorff Threshold: 7.268129898694089

@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Define input and output file paths
-txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/modified_output_cracks_testing_deeplab.txt"
-csv_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/output_cracks_testing_deeplab.csv"
+txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/thebe/txts/mod_output_thebe_testing_unetpp.txt"
+csv_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/thebe/txts/output_thebe_testing_unetpp.csv"
 
 # Initialize list to store data
 data = []

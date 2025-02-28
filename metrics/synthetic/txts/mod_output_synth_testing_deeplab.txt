@@ -8,14 +8,14 @@ Average Hausdorff on BCD Threshold: 133.32223171527977
 Evaluation for deeplab
 test set: synth
 finetune: cracks experts
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 144.39794703391811
 Average DICE on DICE Threshold: 0.03329329467232471
 Average Hausdorff on DICE Threshold: 133.32223171527977
 Evaluation for deeplab
 test set: synth
 finetune: cracks experts
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 144.39794703391811
 Average DICE on Hausdorff Threshold: 0.03329329467232471
 Average Hausdorff on Hausdorff Threshold: 133.32223171527977
@@ -29,14 +29,14 @@ Average Hausdorff on BCD Threshold: 174.0414584677143
 Evaluation for deeplab
 test set: synth
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 188.18611503587778
 Average DICE on DICE Threshold: 0.022159487281613648
 Average Hausdorff on DICE Threshold: 174.0414584677143
 Evaluation for deeplab
 test set: synth
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 188.18611503587778
 Average DICE on Hausdorff Threshold: 0.022159487281613648
 Average Hausdorff on Hausdorff Threshold: 174.0414584677143
@@ -50,14 +50,14 @@ Average Hausdorff on BCD Threshold: 94.41130002984362
 Evaluation for deeplab
 test set: synth
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 104.65168311925979
 Average DICE on DICE Threshold: 0.06955586352124474
 Average Hausdorff on DICE Threshold: 94.41130002984362
 Evaluation for deeplab
 test set: synth
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 104.65168311925979
 Average DICE on Hausdorff Threshold: 0.06955586352124474
 Average Hausdorff on Hausdorff Threshold: 94.41130002984362
@@ -71,14 +71,14 @@ Average Hausdorff on BCD Threshold: 188.603864216447
 Evaluation for deeplab
 test set: synth
 finetune: thebe
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 202.6677806104339
 Average DICE on DICE Threshold: 0.034009790054579866
 Average Hausdorff on DICE Threshold: 188.603864216447
 Evaluation for deeplab
 test set: synth
 finetune: thebe
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 202.6677806104339
 Average DICE on Hausdorff Threshold: 0.034009790054579866
 Average Hausdorff on Hausdorff Threshold: 188.603864216447
@@ -92,14 +92,14 @@ Average Hausdorff on BCD Threshold: 4.661321260586421
 Evaluation for deeplab
 test set: synth
 pretrain_synth
-Best Threshold: 0.96
+Best Threshold for DICE: 0.96
 Average BCD_2D on DICE Threshold: 5.9392292588024045
 Average DICE on DICE Threshold: 0.43818910081135487
 Average Hausdorff on DICE Threshold: 4.661321260586421
 Evaluation for deeplab
 test set: synth
 pretrain_synth
-Best Threshold: 0.96
+Best Threshold for Hausdorff: 0.96
 Average BCD_2D on Hausdorff Threshold: 5.9392292588024045
 Average DICE on Hausdorff Threshold: 0.43818910081135487
 Average Hausdorff on Hausdorff Threshold: 4.661321260586421

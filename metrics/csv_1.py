@@ -1,5 +1,5 @@
-txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/output_cracks_testing_deeplab.txt"
-modified_txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/modified_output_cracks_testing_deeplab.txt"
+txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/thebe/txts/output_thebe_testing_unetpp.txt"
+modified_txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/thebe/txts/mod_output_thebe_testing_unetpp.txt"
 
 # Read the original text file
 with open(txt_file_path, "r") as file:

@@ -8,14 +8,14 @@ Average Hausdorff on BCD Threshold: 147.2127381657261
 Evaluation for unet
 test set: thebe
 finetune: cracks experts
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 213.69485564901868
 Average DICE on DICE Threshold: 0.01927220523878854
 Average Hausdorff on DICE Threshold: 147.2127381657261
 Evaluation for unet
 test set: thebe
 finetune: cracks experts
-Best Threshold: 0.96
+Best Threshold for Hausdorff: 0.96
 Average BCD_2D on Hausdorff Threshold: 228.02786205947857
 Average DICE on Hausdorff Threshold: 0.018181108978752733
 Average Hausdorff on Hausdorff Threshold: 143.8129929075735
@@ -29,14 +29,14 @@ Average Hausdorff on BCD Threshold: 260.242096169011
 Evaluation for unet
 test set: thebe
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 366.4005225176504
 Average DICE on DICE Threshold: 0.012624081631923356
 Average Hausdorff on DICE Threshold: 260.242096169011
 Evaluation for unet
 test set: thebe
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 366.4005225176504
 Average DICE on Hausdorff Threshold: 0.012624081631923356
 Average Hausdorff on Hausdorff Threshold: 260.242096169011
@@ -50,14 +50,14 @@ Average Hausdorff on BCD Threshold: 111.5441377785832
 Evaluation for unet
 test set: thebe
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 185.58220828403464
 Average DICE on DICE Threshold: 0.02989893436532769
 Average Hausdorff on DICE Threshold: 111.5441377785832
 Evaluation for unet
 test set: thebe
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 185.58220828403464
 Average DICE on Hausdorff Threshold: 0.02989893436532769
 Average Hausdorff on Hausdorff Threshold: 111.5441377785832
@@ -71,14 +71,14 @@ Average Hausdorff on BCD Threshold: 51.649013505056
 Evaluation for unet
 test set: thebe
 finetune: thebe
-Best Threshold: 0.91
+Best Threshold for DICE: 0.91
 Average BCD_2D on DICE Threshold: 49.85154604527676
 Average DICE on DICE Threshold: 0.15961185044646276
 Average Hausdorff on DICE Threshold: 34.12914313742778
 Evaluation for unet
 test set: thebe
 finetune: thebe
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 78.6830601550959
 Average DICE on Hausdorff Threshold: 0.15821557843432163
 Average Hausdorff on Hausdorff Threshold: 51.649013505056
@@ -92,14 +92,14 @@ Average Hausdorff on BCD Threshold: 140.2569575451697
 Evaluation for unet
 test set: thebe
 pretrain_synth
-Best Threshold: 0.16
+Best Threshold for DICE: 0.16
 Average BCD_2D on DICE Threshold: 218.3023195503141
 Average DICE on DICE Threshold: 0.016334280902358594
 Average Hausdorff on DICE Threshold: 146.62954581484829
 Evaluation for unet
 test set: thebe
 pretrain_synth
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 199.2775596616494
 Average DICE on Hausdorff Threshold: 0.02019477165492622
 Average Hausdorff on Hausdorff Threshold: 140.2569575451697
@@ -113,14 +113,14 @@ Average Hausdorff on BCD Threshold: 147.2127381657261
 Evaluation for unet
 test set: thebe
 finetune: cracks experts
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 213.69485564901868
 Average DICE on DICE Threshold: 0.01927220523878854
 Average Hausdorff on DICE Threshold: 147.2127381657261
 Evaluation for unet
 test set: thebe
 finetune: cracks experts
-Best Threshold: 0.96
+Best Threshold for Hausdorff: 0.96
 Average BCD_2D on Hausdorff Threshold: 228.02786205947857
 Average DICE on Hausdorff Threshold: 0.018181108978752733
 Average Hausdorff on Hausdorff Threshold: 143.8129929075735
@@ -134,14 +134,14 @@ Average Hausdorff on BCD Threshold: 260.242096169011
 Evaluation for unet
 test set: thebe
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 366.4005225176504
 Average DICE on DICE Threshold: 0.012624081631923356
 Average Hausdorff on DICE Threshold: 260.242096169011
 Evaluation for unet
 test set: thebe
 finetune: cracks prac
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 366.4005225176504
 Average DICE on Hausdorff Threshold: 0.012624081631923356
 Average Hausdorff on Hausdorff Threshold: 260.242096169011
@@ -155,14 +155,14 @@ Average Hausdorff on BCD Threshold: 111.5441377785832
 Evaluation for unet
 test set: thebe
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for DICE: 0.01
 Average BCD_2D on DICE Threshold: 185.58220828403464
 Average DICE on DICE Threshold: 0.02989893436532769
 Average Hausdorff on DICE Threshold: 111.5441377785832
 Evaluation for unet
 test set: thebe
 finetune: cracks novice
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 185.58220828403464
 Average DICE on Hausdorff Threshold: 0.02989893436532769
 Average Hausdorff on Hausdorff Threshold: 111.5441377785832
@@ -176,14 +176,14 @@ Average Hausdorff on BCD Threshold: 51.649013505056
 Evaluation for unet
 test set: thebe
 finetune: thebe
-Best Threshold: 0.91
+Best Threshold for DICE: 0.91
 Average BCD_2D on DICE Threshold: 49.85154604527676
 Average DICE on DICE Threshold: 0.15961185044646276
 Average Hausdorff on DICE Threshold: 34.12914313742778
 Evaluation for unet
 test set: thebe
 finetune: thebe
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 78.6830601550959
 Average DICE on Hausdorff Threshold: 0.15821557843432163
 Average Hausdorff on Hausdorff Threshold: 51.649013505056
@@ -197,14 +197,14 @@ Average Hausdorff on BCD Threshold: 140.2569575451697
 Evaluation for unet
 test set: thebe
 pretrain_synth
-Best Threshold: 0.16
+Best Threshold for DICE: 0.16
 Average BCD_2D on DICE Threshold: 218.3023195503141
 Average DICE on DICE Threshold: 0.016334280902358594
 Average Hausdorff on DICE Threshold: 146.62954581484829
 Evaluation for unet
 test set: thebe
 pretrain_synth
-Best Threshold: 0.01
+Best Threshold for Hausdorff: 0.01
 Average BCD_2D on Hausdorff Threshold: 199.2775596616494
 Average DICE on Hausdorff Threshold: 0.02019477165492622
 Average Hausdorff on Hausdorff Threshold: 140.2569575451697
