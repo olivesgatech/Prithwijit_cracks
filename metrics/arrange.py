@@ -4,7 +4,6 @@ import pandas as pd
 txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/modified_output_cracks_testing_deeplab.txt"
 csv_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/output_cracks_testing_deeplab.csv"
 
-
 # Initialize list to store data
 data = []
 
@@ -23,6 +22,8 @@ with open(txt_file_path, "r") as file:
             
             if i+2 < len(lines) and ": " in lines[i+2]:
                 finetune = lines[i+2].split(": ")[1].strip()
+            elif "pretrain_synth" in lines[i+2]:
+                finetune = "pretrain_synth"
             else:
                 finetune = "Unknown"
             
