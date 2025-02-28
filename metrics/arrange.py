@@ -28,8 +28,18 @@ with open(txt_file_path, "r") as file:
             
             j = 3
             while i + j < len(lines) and "Threshold" in lines[i + j]:
-                threshold_type = lines[i + j].split(" ")[-1].strip()
-                best_threshold = float(lines[i + j].split(": ")[1].strip())
+                threshold_info = lines[i + j].split(": ")
+                best_threshold = float(threshold_info[1].strip())
+                
+                if "BCD" in threshold_info[0]:
+                    threshold_type = "BCD"
+                elif "DICE" in threshold_info[0]:
+                    threshold_type = "DICE"
+                elif "Hausdorff" in threshold_info[0]:
+                    threshold_type = "Hausdorff"
+                else:
+                    threshold_type = "Unknown"
+                
                 avg_bcd_2d = float(lines[i + j + 1].split(": ")[1].strip())
                 avg_dice = float(lines[i + j + 2].split(": ")[1].strip())
                 avg_hausdorff = float(lines[i + j + 3].split(": ")[1].strip())
