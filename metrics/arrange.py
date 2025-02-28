@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Define input and output file paths
-txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/output_cracks_testing_deeplab.txt"
+txt_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/modified_output_cracks_testing_deeplab.txt"
 csv_file_path = "/home/prithwijit/Cracks/Prithwijit_cracks/metrics/cracks/output_cracks_testing_deeplab.csv"
 
 
