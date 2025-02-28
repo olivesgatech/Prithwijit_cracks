@@ -39,7 +39,7 @@ def calculate_modified_hausdorff_distance(true, pred):
     
     # Calculate and return the modified Hausdorff distance
     dist = hausdorff_distance(pred_bool, true_mask_bool, method='modified')
-    return max_distance if dist == float('inf') else dist
+    return max_distance if np.isinf(dist) else dist
     
 
 
@@ -51,7 +51,7 @@ def compute_bcd_2d(label, prediction):
     if len(label_points) == 0 and len(prediction_points) == 0:
         return 0
     if len(label_points) == 0 or len(prediction_points) == 0:
-        return np.inf
+        return max_distance
 
     nbrs_label = NearestNeighbors(n_neighbors=1, algorithm='auto').fit(prediction_points)
     dists_label_to_pred, _ = nbrs_label.kneighbors(label_points)

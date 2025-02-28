@@ -1,30 +1,105 @@
 Evaluation for unetpp
 test set: synth
 finetune: cracks experts
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 330.56904149035336
+Average DICE on BCD Threshold: 0.034239973530976686
+Average Hausdorff on BCD Threshold: 327.25238437047705
 Evaluation for unetpp
 test set: synth
 finetune: cracks experts
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: 330.56904149035336
+Average DICE on DICE Threshold: 0.034239973530976686
+Average Hausdorff on DICE Threshold: 327.25238437047705
 Evaluation for unetpp
 test set: synth
 finetune: cracks experts
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: 330.56904149035336
+Average DICE on Hausdorff Threshold: 0.034239973530976686
+Average Hausdorff on Hausdorff Threshold: 327.25238437047705
 Evaluation for unetpp
 test set: synth
 finetune: cracks prac
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 310.14403439462694
+Average DICE on BCD Threshold: 0.0014646095563049337
+Average Hausdorff on BCD Threshold: 285.1375273665545
 Evaluation for unetpp
 test set: synth
 finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: 310.14403439462694
+Average DICE on DICE Threshold: 0.0014646095563049337
+Average Hausdorff on DICE Threshold: 285.1375273665545
 Evaluation for unetpp
 test set: synth
 finetune: cracks prac
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: 310.14403439462694
+Average DICE on Hausdorff Threshold: 0.0014646095563049337
+Average Hausdorff on Hausdorff Threshold: 285.1375273665545
 Evaluation for unetpp
 test set: synth
 finetune: cracks novice
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 236.51268788730903
+Average DICE on BCD Threshold: 0.003948342602114799
+Average Hausdorff on BCD Threshold: 200.4997158296182
 Evaluation for unetpp
 test set: synth
 finetune: cracks novice
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: 236.51268788730903
+Average DICE on DICE Threshold: 0.003948342602114799
+Average Hausdorff on DICE Threshold: 200.4997158296182
 Evaluation for unetpp
 test set: synth
 finetune: cracks novice
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: 236.51268788730903
+Average DICE on Hausdorff Threshold: 0.003948342602114799
+Average Hausdorff on Hausdorff Threshold: 200.4997158296182
 Evaluation for unetpp
 test set: synth
 finetune: thebe
+Best Threshold for BCD: 0.01
+Average BCD_2D on BCD Threshold: 45.002006874001566
+Average DICE on BCD Threshold: 0.10693858079774268
+Average Hausdorff on BCD Threshold: 29.05444666064249
+Evaluation for unetpp
+test set: synth
+finetune: thebe
+Best Threshold: 0.01
+Average BCD_2D on DICE Threshold: 45.002006874001566
+Average DICE on DICE Threshold: 0.10693858079774268
+Average Hausdorff on DICE Threshold: 29.05444666064249
+Evaluation for unetpp
+test set: synth
+finetune: thebe
+Best Threshold: 0.01
+Average BCD_2D on Hausdorff Threshold: 45.002006874001566
+Average DICE on Hausdorff Threshold: 0.10693858079774268
+Average Hausdorff on Hausdorff Threshold: 29.05444666064249
+Evaluation for unetpp
+test set: synth
+pretrain_synth
+Best Threshold for BCD: 0.96
+Average BCD_2D on BCD Threshold: 12.913441248324503
+Average DICE on BCD Threshold: 0.3791900234545188
+Average Hausdorff on BCD Threshold: 9.791822402852308
+Evaluation for unetpp
+test set: synth
+pretrain_synth
+Best Threshold: 0.96
+Average BCD_2D on DICE Threshold: 12.913441248324503
+Average DICE on DICE Threshold: 0.3791900234545188
+Average Hausdorff on DICE Threshold: 9.791822402852308
+Evaluation for unetpp
+test set: synth
+pretrain_synth
+Best Threshold: 0.96
+Average BCD_2D on Hausdorff Threshold: 12.913441248324503
+Average DICE on Hausdorff Threshold: 0.3791900234545188
+Average Hausdorff on Hausdorff Threshold: 9.791822402852308

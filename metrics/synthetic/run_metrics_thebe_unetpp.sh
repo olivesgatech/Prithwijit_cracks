@@ -14,7 +14,7 @@ echo "finetune: cracks experts"  >> "$OUTPUT_FILE"
 
 #/home/prithwijit/Cracks/Prithwijit_cracks/metrics/ods_bcd.py
 
-python /home/prithwijit/Cracks/Prithwijit_cracks/metrics/thebe/ods_bcd.py --gt_folder /mnt/HD_18T_pt1/prithwijit/models_predictions/unetpp/synthetic/fine_expert/gt_train \
+python /home/prithwijit/Cracks/Prithwijit_cracks/metrics/synthetic/ods_bcd.py --gt_folder /mnt/HD_18T_pt1/prithwijit/models_predictions/unetpp/synthetic/fine_expert/gt_train \
                    --pred_folder /mnt/HD_18T_pt1/prithwijit/models_predictions/unetpp/synthetic/fine_expert/logits_train \
                    --eval_gt_folder /mnt/HD_18T_pt1/prithwijit/models_predictions/unetpp/synthetic/fine_expert/gt  \
                    --eval_pred_folder /mnt/HD_18T_pt1/prithwijit/models_predictions/unetpp/synthetic/fine_expert/logits >> "$OUTPUT_FILE" 2>/dev/null

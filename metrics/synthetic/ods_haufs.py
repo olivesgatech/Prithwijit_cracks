@@ -51,7 +51,7 @@ def compute_bcd_2d(label, prediction):
     if len(label_points) == 0 and len(prediction_points) == 0:
         return 0
     if len(label_points) == 0 or len(prediction_points) == 0:
-        return np.inf
+        return max_distance
 
     nbrs_label = NearestNeighbors(n_neighbors=1, algorithm='auto').fit(prediction_points)
     dists_label_to_pred, _ = nbrs_label.kneighbors(label_points)
@@ -63,7 +63,7 @@ def compute_bcd_2d(label, prediction):
     min_dist_pred_to_label = np.mean(dists_pred_to_label)
 
     dist = min_dist_label_to_pred + min_dist_pred_to_label
-    return max_distance if dist == float('inf') else dist 
+    return max_distance if np.isinf(dist) else dist 
 
 def main(args):
     # Folder paths for ground truth and prediction numpy files (for threshold selection)
